@@ -10,11 +10,9 @@ import (
 
 func main() {
 	var i, j float64
-
 	fmt.Println("Informe dois número por favor:")
 	fmt.Scan(&i)
 	fmt.Scan(&j)
 	fmt.Println("Resulta:", math.Abs(i*j))
-
-	fmt.Printf(utility.Reverse(strconv.FormatFloat(math.Abs(i*j), 'f', -2, 64)))
+	fmt.Println(utility.Reverse(strconv.FormatFloat(math.Abs(i*j), 'f', -2, 64)))
 }
